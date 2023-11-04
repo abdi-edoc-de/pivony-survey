@@ -1,0 +1,27 @@
+.header {
+  height: 64;
+  padding: 40px 50px;
+  line-height: 64px;
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+.new-modal-btn {
+  background-color: #ffffff;
+  align-items: end;
+  /* display: flex; */
+}
+
+.header-logo-space {
+  /* background-color: black; */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.content {
+  background-color: white;
+  padding: 3% 0;
+}

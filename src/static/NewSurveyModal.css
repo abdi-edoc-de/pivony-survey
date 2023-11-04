@@ -1,0 +1,23 @@
+.modal-btn {
+    background-color: black;
+}
+
+.create-btn {
+    background-color: rgb(192, 121, 233);
+    color: white;
+}
+
+
+
+.modal-btn {
+    display: inline-block;
+
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+

@@ -1,0 +1,16 @@
+.detail-container {
+    width: 100%;
+    /* background-color: blanchedalmond; */
+}
+
+.input-col {
+    text-align: start;
+    padding: 0 2%;
+}
+
+
+.save-btn {
+    background-color: rgb(192, 121, 233);
+    color: white;
+    margin-bottom: 2%;
+}
