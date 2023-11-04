@@ -5,4 +5,5 @@
 
 .survey-card {
     border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 250px;
 }
