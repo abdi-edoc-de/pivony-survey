@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
-  Card,
   Col,
   Row,
   Form,
@@ -19,8 +18,8 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "../static/DetailSurvey.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getSurveyById, updateSurveyApi } from "../store/survey";
-import CopyGenerateCode from "./CopyGenerateCode";
-import SurveyAnswerTable from "./SurveyAnswerTable";
+import CopyGenerateCode from "../components/CopyGenerateCode";
+import SurveyAnswerTable from "../components/SurveyAnswerTable";
 const DetailSurvey = () => {
   const dispatch = useDispatch();
   const code = `<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js">

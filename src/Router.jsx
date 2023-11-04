@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import React from "react";
-import ListOfSurveys from "./components/ListOfSurveys";
-import DetailSurvey from "./components/DetailSurvey";
+import ListOfSurveys from "./pages/ListOfSurveys";
+import DetailSurvey from "./pages/DetailSurvey";
 const Router = (props) => {
   return (
     <>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Space, Table, Tag } from "antd";
+import { Table } from "antd";
 const columns = [
   {
     title: <p style={{ width: "75px" }}>No</p>,

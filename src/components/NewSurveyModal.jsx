@@ -2,28 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Button, Modal, Divider, InputNumber, Form, Input } from "antd";
 import "../static/NewSurveyModal.css";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { db } from "../firebase-config";
-import {
-  collection,
-  getDocs,
-  addDoc,
-  updateDoc,
-  deleteDoc,
-  doc,
-} from "firebase/firestore";
+
 import { addSurveyApi, getSurveyApi } from "../store/survey";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 const NewSurveyModal = () => {
   const dispatch = useDispatch();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const surveyCollectionRef = collection(db, "survey");
   const [createSurveyLoading, setCreateSurveyLoading] = useState(false);
 
   const showModal = () => {
     setIsModalOpen(true);
-  };
-  const handleOk = () => {
-    setIsModalOpen(false);
   };
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -36,7 +24,6 @@ const NewSurveyModal = () => {
       .validateFields()
       .then(async (values) => {
         dispatch(addSurveyApi(values));
-        // const data = await addDoc(surveyCollectionRef, values);
         form.resetFields();
         setIsModalOpen(false);
       })
@@ -91,10 +78,8 @@ const NewSurveyModal = () => {
               <Input placeholder=" Name" />
             </Form.Item>
             <Form.Item
-              // hasFeedback
               label="choose how much time to wait before showing the survey"
               name="wait"
-              // validateTrigger="onBlur"
               rules={[{ required: true }]}
             >
               <InputNumber
@@ -128,15 +113,12 @@ const NewSurveyModal = () => {
                     }}
                   />
                 }
-                // defaultValue={0}
                 placeholder="Seconds"
               />
             </Form.Item>
             <Form.Item
-              // hasFeedback
               label="choose how much time to show the survey"
               name="times"
-              // validateTrigger="onBlur"
               rules={[{ required: true }]}
             >
               <InputNumber

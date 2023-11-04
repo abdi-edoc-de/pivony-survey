@@ -1,14 +1,10 @@
-import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect } from "react";
 import "./App.css";
 import NewSurveyModal from "./components/NewSurveyModal";
-import { Col, Layout, List, Row, Space, Image } from "antd";
-const { Header, Footer, Sider, Content } = Layout;
-import { db } from "./firebase-config";
-import ListOfSurveys from "./components/ListOfSurveys";
-import { useDispatch, useSelector } from "react-redux";
-import { getSurvey, getSurveyApi } from "./store/survey";
+import { Col, Layout, Row, Space, Image } from "antd";
+const { Header, Content } = Layout;
+import { useDispatch } from "react-redux";
+import { getSurveyApi } from "./store/survey";
 import Router from "./Router";
 import { Link } from "react-router-dom";
 function App() {

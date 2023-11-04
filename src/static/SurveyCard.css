@@ -1,4 +1,8 @@
-.survey-card {
+.survey-card-col {
     margin: 2% 0;
     text-align: left;
+}
+
+.survey-card {
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
